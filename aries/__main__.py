@@ -76,7 +76,6 @@ PM_START_TEXT = """
 Hello there, [👋](https://telegra.ph/file/ac893610cae84f302b2da.jpg) I'm {}.
 Im Powerfull Management Bot And I Will Help In Managing Your Group.
 Maintained by : [Aryza](https://t.me/idzxartez)
-Founder And Dev Of : [IDZEROID SYNDICATES](https://t.me/idzeroidsupport).
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 • `{}` *Users, across* `{}` *chats.*
@@ -87,8 +86,8 @@ Made specifically to manage your group , I specialize in managing Entertainment 
 
 buttons = [
     [
-        InlineKeyboardButton(text=" ｢ Details 」", callback_data="aboutmanu_"),
-        InlineKeyboardButton(text=" ｢ Inline 」", switch_inline_query_current_chat=""),
+        InlineKeyboardButton(text="[► Details ◄]", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="[► Inline ◄]", switch_inline_query_current_chat=""),
     ],
     [
         InlineKeyboardButton(
@@ -97,15 +96,15 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text=" ｢ Support 」", url="http://t.me/idzeroidsupport"),
-        InlineKeyboardButton(text=" [❌] ", callback_data="close"),
-        InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/idzeroid"),
+        InlineKeyboardButton(text="🚑 Support", url="t.me/BLAZE_Support"),
+        InlineKeyboardButton(text=" [⫷⫸] ", callback_data="close"),
+        InlineKeyboardButton(text="Updates 📢", url="t.me/The_Blaze_Network"),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [Saint Aries](https://telegra.ph/file/ac893610cae84f302b2da.jpg)
+*Main Commands :* [ᎻʏᴘᴇʀᴍᴇΝ Ꭱᴏʙᴏᴛ](https://telegra.ph/file/ac893610cae84f302b2da.jpg)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
@@ -265,10 +264,10 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support", url=f"https://telegram.dog/idzeroidsupport"
+                            text="Support", url=f"https://telegram.dog/Hypermen_Support"
                         ),
                         InlineKeyboardButton(
-                            text="Updates", url="https://telegram.dog/idzeroid"
+                            text="Updates", url="https://telegram.dog/team_Blaze_xD"
                         ),
                     ],
                 ]
@@ -331,7 +330,7 @@ def help_button(update, context):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Support", url="https://t.me/idzeroidsupport"
+                                text="Support", url="https://t.me/UNIQUE_English_SOCIETY"
                             ),
                         ],
                     ]
@@ -386,7 +385,7 @@ def aries_about_callback(update, context):
     if query.data == "aboutmanu_":
         query.message.edit_text(
             text=f"*👋Hi again!  The name's {dispatcher.bot.first_name}  \n\nA powerful group management bot built to help you manage your group easily.* "
-            f"\n\n 🔥 Join [Idzeroid Syndicates](https://t.me/idzeroidsupport) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            f"\n\n 🔥 Join [ᎻʏᴘᴇʀᴍᴇΝ Sᴜᴘᴘᴏʀᴛ](https://t.me/BLAZE_Support) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\n ⚡️ 》 I can restrict users."
             f"\n\n ⚡️ 》 I can greet users with customizable welcome messages and even set a group's rules."
@@ -394,8 +393,8 @@ def aries_about_callback(update, context):
             f"\n\n ⚡️ 》 I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             f"\n\n ⚡️ 》 I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             f"\n\n ⚡️ 》 I check for admins' permissions before executing any command and more stuffs"
-            f"\n\n If you have any question about *Aries*, let us know at @IdzeroidSupport."
-            f"\n\n👇 You Can Know More About *Aries* By Clicking The Below Buttons 👇",
+            f"\n\n If you have any question about *ᎻʏᴘᴇʀᴍᴇΝ*, let us know at @hypermen_support."
+            f"\n\n👇 You Can Know More About *ᎻʏᴘᴇʀᴍᴇΝ* By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -410,7 +409,7 @@ def aries_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Help & Commands", callback_data="help_back"
+                            text="[► Help & Commands ◄]", callback_data="help_back"
                         )
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
@@ -434,7 +433,7 @@ def aries_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [support](https://t.me/idzeroidsupport).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [support](https://t.me/Blaze_Support).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -517,12 +516,12 @@ def aries_about_callback(update, context):
             text=f"<b> ｢ Terms and Conditions 」</b>\n"
             f"\n<i>To Use This Bot, You Need To Read Terms and Conditions Carefully.</i>\n"
             f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
-            f"\n✪ Always try to keep credits, so \n  This hardwork is done by @IdzXartez spending many sleepless nights.. So, Respect it."
+            f"\n✪ Always try to keep credits, so \n  This hardwork is done by @official_afk_xD spending many sleepless nights.. So, Respect it."
             f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>Paul Larson for Marie</b>."
-            f"\n✪ If you need to ask anything about \n  this bot, Go @Idzeroidsupport."
+            f"\n✪ If you need to ask anything about \n  this bot, Go @Hypermen_support."
             f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
             f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n\nFor any kind of help, related to this bot, Join @idzeroidsupport."
+            f"\n\nFor any kind of help, related to this bot, Join @The_blaze_Network."
             f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
@@ -542,10 +541,10 @@ def aries_about_callback(update, context):
             f"\n1. **first, add me to your group."
             f"\n2. **then promote me as admin and give all permissions except anonymous admin."
             f"\n3. **after promoting me, type /admincache in group to update the admin list."
-            f"\n4. **add @IdzMusic to your group."
+            f"\n4. **add @Hyper_Assistant to your group."
             f"\n5. **turn on the video chat first before start to play music.\n\n"
             f"\n📌 **if the userbot not joined to video chat, make sure if the video chat already turned on, or you can ask Admins in @idzeroidsupport.**\n"
-            f"\n⚡ __Powered by Aries A.I__\n",
+            f"\n⚡ __Powered by- [Tᴇᴀᴍ Bʟᴀᴢᴇ](t.me/The_Blaze_NETWORK) A.I__\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -572,7 +571,7 @@ def aries_about_callback(update, context):
             f"\n6. **/video (name video) for download video."
             f"\n7. **/lyrics for searching lyrics.\n\n"
             f"\n📌 **Also you can download music or video with push button menu.**\n"
-            f"\n⚡ __Powered by Aries A.I__\n",
+            f"\n⚡ ➣ Powered by- [Tᴇᴀᴍ Bʟᴀᴢᴇ 🇮🇳](t.me/Team_Blaze_xD) A.I__\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -628,10 +627,10 @@ def get_help(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Support", url=f"https://telegram.dog/idzeroidsupport"
+                            text="Support", url=f"https://telegram.dog/Hypermen_Support"
                         ),
                         InlineKeyboardButton(
-                            text="Updates", url="https://telegram.dog/idzeroid"
+                            text="Updates", url="https://telegram.dog/The_Blaze_Network"
                         ),
                     ],
                     [
